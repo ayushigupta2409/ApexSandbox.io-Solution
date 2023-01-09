@@ -1,0 +1,7 @@
+public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
+    //code here
+    if(employeeIdToEmail.containskey(employeeId)){
+        return employeeIdToEmail.get(employeeId);
+    }
+    return 'info@apexsandbox.io';
+}
