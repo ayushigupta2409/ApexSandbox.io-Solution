@@ -1,0 +1,11 @@
+public Boolean isTeenager(Integer age) {
+    //code here
+    switch on age{
+        when 13,14,15,16,17,18,19{
+            return True;
+        }
+        when else{
+            return false;
+        }
+    }
+}
