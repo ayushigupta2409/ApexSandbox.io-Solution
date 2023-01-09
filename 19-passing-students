@@ -1,0 +1,4 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+    return passedProject && passedExam || passedExam && passedAssignments || passedAssignments && passedProject;
+}
