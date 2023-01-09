@@ -1,0 +1,15 @@
+public Map<String, Decimal> industrySummary(List<Account> accounts) {
+    //code here
+    Map<String,Decimal> summary = new Map<String,Decimal>();
+    Decimal val;
+    for(Account a: accounts){
+        if(summary.containskey(a.Industry)){
+            val=summary.get(a.Industry)+a.AnnualRevenue;
+            summary.put(a.Industry,val);
+        }
+        else{
+            summary.put(a.Industry,a.AnnualRevenue);
+        }
+    }
+    return summary;
+}
