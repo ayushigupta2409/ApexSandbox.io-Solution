@@ -1,0 +1,12 @@
+public Boolean isTypeAccount(sObject record)
+{
+    switch on record{
+        when Account{
+            return true;
+        }
+        when else{
+            return false;
+        }
+    }
+    
+}
