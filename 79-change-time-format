@@ -1,0 +1,20 @@
+public String changeTimeFormat(String strTime) {
+    Integer hrs = Integer.valueOf(strTime.substringbefore(':'));
+    String meridiem = ' AM';
+    String strHrs;
+    if (hrs == 12) meridiem = ' PM';
+    if (hrs > 12) { 
+        meridiem = ' PM';
+        hrs -= 12;
+    }
+    if (hrs == 0) {
+        hrs = 12;
+    }
+    if(hrs<10){
+        strHrs = '0' + String.valueOf(hrs);
+    }
+    else{
+        strHrs = String.valueOf(hrs);
+    }
+    return strHrs + ':' + strTime.substringafter(':') + meridiem;
+}
