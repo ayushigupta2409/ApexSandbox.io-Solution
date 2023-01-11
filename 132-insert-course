@@ -7,10 +7,10 @@ public Id insertCourse(String name, String details, Integer credits) {
         when 1,2,3,4{
             c.apxio__Credits__c = credits;        
         }
-        when else{
+        /*when else{
             c.apxio__Credits__c = null;
     
-        }
+        }*/
     }
     
     insert c;
