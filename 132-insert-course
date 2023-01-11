@@ -5,7 +5,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     c.apxio__Course_Details__c = details;
     switch on credits{
         when 1,2,3,4{
-            c.apxio__Credits__c = credits;        
+            c.apxio__Credits__c = String.valueof(credits);        
         }
         /*when else{
             c.apxio__Credits__c = null;
