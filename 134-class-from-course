@@ -4,6 +4,7 @@ public Id classFromCourse(String courseName) {
     apxio__Course__c h = [select Id,Name from apxio__Course__c where Name =: courseName];
     if (h != null){
         c.apxio__Course__c = h.Id;
+        c.Name = courseName;
         insert c;
         return c.Id;
     }
