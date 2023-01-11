@@ -1,0 +1,4 @@
+public void enrollStudents(List<String> emails, String className) {
+    // code here
+    List<apxio__Class_Enrollment__c> a = new List<apxio__Class_Enrollment__c>(apxio__Email__c=emails);
+}
