@@ -22,7 +22,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {
-    public String getMessage(){
+    public String override getMessage(){
         return 'AccountException';
     }
 }
