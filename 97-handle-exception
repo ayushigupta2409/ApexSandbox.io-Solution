@@ -4,6 +4,6 @@ public String divide(Integer a, Integer b){
         return String.valueof(a/b);
     }
     catch(exception e){
-        return e;
+        return e.getMessage();
     }
 }
