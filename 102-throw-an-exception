@@ -11,10 +11,10 @@ public List<Account> checkAccounts(List<Account> accounts)
         return accounts;
         }
     }
-    catch (IllegalArgumentException e){
+    throw (IllegalArgumentException e){
         return 'accounts should not be null';
     }
-    catch (AccountException e){
+    throw (AccountException e){
         return e.getMessage();
     }
     
