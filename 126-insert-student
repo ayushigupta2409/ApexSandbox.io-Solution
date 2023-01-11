@@ -4,6 +4,5 @@ public Id insertStudent(String name, String email) {
     s.Name = name;
     s.apxio__Email__c = email;
     insert s;
-    apxio__Student__c a = [Select Id,Name,apxio__Email__c from apxio__Student__c where Name==name and apxio__Email__c==email];
-    return a.Id;
+    return s.Id;
 }
