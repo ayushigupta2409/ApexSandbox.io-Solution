@@ -1,7 +1,7 @@
 public Boolean isTypeAccount(sObject record)
 {
     switch on record{
-        when Account{
+        when Account acc{
             return true;
         }
         when else{
