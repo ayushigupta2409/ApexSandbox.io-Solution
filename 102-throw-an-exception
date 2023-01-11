@@ -1,28 +1,33 @@
 public List<Account> checkAccounts(List<Account> accounts)
-{   Boolean dup = false;
-    try{
-        for(Account a: accounts){
-        if (a.BillingCity == null){
-            dup = true;
-            break;
-        }
-        }
-        if (! dup){
-        return accounts;
-        }
+{   if(accounts == null)
+
+    {
+
+        throw new IllegalArgumentException ('accounts should not be null');
+
     }
-    throw (IllegalArgumentException e){
-        return 'accounts should not be null';
+
+    for(Account acc : accounts)
+
+    {
+
+        if(acc?.BillingCity == null)
+
+        {
+
+            throw new AccountException('Invalid BillingCity');
+
+        }
+
     }
-    throw (AccountException e){
-        return e.getMessage();
-    }
+
+     return accounts;
+
+}
     
 }
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {
-    public String override getMessage(){
-        return 'AccountException';
-    }
+    
 }
