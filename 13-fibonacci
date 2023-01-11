@@ -1,0 +1,12 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    Integer a=1;
+    Integer b=1;
+    Integer c;
+    for(Integer i=0;i<n-2;i++){
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    return b;
+}
