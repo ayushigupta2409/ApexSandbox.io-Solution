@@ -2,7 +2,7 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
     if(inputJSON == null || inputJSON == ''){
         return null;
     }
-    List<Account> acc = new List<Account>(obj);
+    List<Account> acc = new List<Account>();
     object obj = JSON.deserialize(inputJSON,acc.class);
     
     return acc;
