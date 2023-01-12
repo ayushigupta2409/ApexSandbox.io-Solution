@@ -1,0 +1,5 @@
+public Map<String,String> getContextUserInformation(){
+    Map<String,String> info = new Map<String,String>();
+    info.put(UserName,UserInfo.UserName);
+    return info;
+}
