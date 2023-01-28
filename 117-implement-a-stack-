@@ -10,9 +10,13 @@ public class Stack {
     
     public Object pop() {
         //implement pop
-        Integer n = stk.size();
-        object ob = stk.remove(stk[n-1])
-        return ob;
+        if(!stk.isEmpty()){
+            Integer n = stk.size();
+            object ob = stk.remove(stk[n-1])
+            return ob;
+        }
+        return null;
+        
     }
     
     public Integer size() {
