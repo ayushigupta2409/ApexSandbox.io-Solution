@@ -22,8 +22,7 @@ public class Stack {
     
     public Object peek(){
         //implement peek
-        Integer n = stk.size();
-        return stk[n-1];
+        return stk[stk.size()-1];
     }
     
     public Boolean isEmpty() {
