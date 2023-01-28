@@ -1,6 +1,8 @@
 public class Stack {
     
-    public list<object> stk = new list<object>(); 
+    public Stack(){
+        public list<object> stk = new list<object>(); 
+    }
     public void push(Object obj) {
         //implement push
         stk.add(obj);
