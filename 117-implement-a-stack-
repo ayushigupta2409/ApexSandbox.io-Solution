@@ -11,8 +11,7 @@ public class Stack {
     public Object pop() {
         //implement pop
         if(!stk.isEmpty()){
-            Integer n = stk.size();
-            object ob = stk.remove(stk[n-1])
+            object ob = stk.remove(stk.size()-1)
             return ob;
         }
         return null;
