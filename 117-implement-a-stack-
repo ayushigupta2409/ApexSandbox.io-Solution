@@ -8,7 +8,8 @@ public class Stack {
     
     public Object pop() {
         //implement pop
-        pass;
+        Integer n = stk.size();
+        stk.remove(stk[n-1])
     }
     
     public Integer size() {
@@ -18,11 +19,12 @@ public class Stack {
     
     public Object peek(){
         //implement peek
-        pass;
+        Integer n = stk.size();
+        return stk[n-1];
     }
     
     public Boolean isEmpty() {
         //implement isEmpty
-        return stk.size()==0;
+        return stk.isEmpty();
     }
 }
