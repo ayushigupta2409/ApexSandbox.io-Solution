@@ -1,0 +1,28 @@
+public class Stack {
+    
+    public list<object> stk = new list<object>(); 
+    public void push(Object obj) {
+        //implement push
+        stk.add(obj);
+    }
+    
+    public Object pop() {
+        //implement pop
+        pass;
+    }
+    
+    public Integer size() {
+        //implement size
+        return stk.size();
+    }
+    
+    public Object peek(){
+        //implement peek
+        pass;
+    }
+    
+    public Boolean isEmpty() {
+        //implement isEmpty
+        return stk.size()==0;
+    }
+}
