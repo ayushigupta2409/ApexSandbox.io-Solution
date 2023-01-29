@@ -1,6 +1,6 @@
 public Boolean isPalindrome(String str){
 //code here
-    String digits = '0123456789 ';
+    String digits = '0123456789 ,';
     for(String s: str){
         if(digits.contains(s)){
             str.remove(s);
