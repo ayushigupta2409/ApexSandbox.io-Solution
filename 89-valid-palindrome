@@ -3,7 +3,7 @@ public Boolean isPalindrome(String str){
     String digits = ', ';
     for(String s: str){
         if(digits.contains(s)){
-            str.remove(s);
+            str.replace(s,'');
         }
     }
     s=s.tolowercase();
