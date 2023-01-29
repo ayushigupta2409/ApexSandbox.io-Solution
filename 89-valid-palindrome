@@ -1,14 +1,14 @@
 public Boolean isPalindrome(String str){
 //code here
     String digits = ', ';
-    Integer n = str.size();
+    Integer n = str.length();
     for(Integer i=0;i<n;i++){
         if(digits.contains(str.charAt(i))){
             str.replace(str.charAt(i),'');
         }
     }
     str=str.tolowercase();
-    n = str.size();
+    n = str.length();
     for(Integer i=0;i<n;i++){
         if(str.charAt(i) != str.charAt(n-i)){
             return False;
