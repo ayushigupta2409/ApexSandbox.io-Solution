@@ -1,6 +1,6 @@
 public Boolean isPalindrome(String str){
 //code here
-    Set<String> digits = {'0','1','2','3','4','5',' ',','};
+    Set<String> digits = new set<String>('0','1','2','3','4','5',' ',',');
     for(String s: str){
         if(digits.contains(s)){
             str.remove(s);
