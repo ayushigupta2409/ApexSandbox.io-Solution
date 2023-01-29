@@ -1,12 +1,7 @@
 public Boolean isPalindrome(String str){
 //code here
-    String digits = ', ';
-    Integer n = str.length();
-    for(Integer i=0;i<n;i++){
-        if(digits.contains(str.charAt(i))){
-            str.replace(str.charAt(i),'');
-        }
-    }
+    String regex = '[/\\W]';
+    str = str.replaceAll(regex, '').toLowerCase();Integer n = str.length();
     str=str.tolowercase();
     n = str.length();
     for(Integer i=0;i<n;i++){
