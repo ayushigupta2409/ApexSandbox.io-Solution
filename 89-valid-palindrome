@@ -2,7 +2,7 @@ public Boolean isPalindrome(String str){
 //code here
     String digits = '0123456789 ';
     for(String s: str){
-        if(s in digits){
+        if(digits.contains(s)){
             str.remove(s);
         }
     }
