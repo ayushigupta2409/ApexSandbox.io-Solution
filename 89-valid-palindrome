@@ -5,9 +5,7 @@ public Boolean isPalindrome(String str){
     Integer n = str.length();
     str=str.tolowercase();
     for(Integer i=0;i<n;i++){
-        if(str.charAt(i) != str.charAt(n-i-1)){
-            return False;
-        }
+        if(str.charAt(i) != str.charAt(n-i-1)) return False;
     }
     return True;
 }
