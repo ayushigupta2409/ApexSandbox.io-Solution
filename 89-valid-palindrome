@@ -1,0 +1,17 @@
+public Boolean isPalindrome(String str){
+//code here
+    String digits = '0123456789 ';
+    for(String s: str){
+        if(s in digits){
+            str.remove(s);
+        }
+    }
+    s=s.lower();
+    integer n = s.size();
+    for(Integer i=0;i<n;i++){
+        if(s[i] != s[n-i]){
+            return False;
+        }
+    }
+    return True;
+}
