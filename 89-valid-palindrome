@@ -1,7 +1,7 @@
 public Boolean isPalindrome(String str){
 //code here
     String digits = ', ';
-    integer n = str.size();
+    Integer n = str.size();
     for(Integer i=0;i<n;i++){
         if(digits.contains(str.charAt(i))){
             str.replace(str.charAt(i),'');
