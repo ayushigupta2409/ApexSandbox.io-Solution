@@ -6,7 +6,7 @@ public Boolean isPalindrome(String str){
             str.remove(s);
         }
     }
-    s=s.lower();
+    s=s.tolowercase();
     integer n = s.size();
     for(Integer i=0;i<n;i++){
         if(s[i] != s[n-i]){
