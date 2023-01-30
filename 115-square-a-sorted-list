@@ -3,6 +3,6 @@ public static List<Integer> squareList(List<Integer> nums){
     for(Integer i=0;i<nums.size();i++){
         nums[i]=nums[i]*nums[i];
     }
-    nums=sort(nums);
+    nums=nums.sort();
     return nums;
 }
