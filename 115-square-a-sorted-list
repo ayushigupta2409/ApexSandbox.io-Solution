@@ -6,7 +6,7 @@ public static List<Integer> squareList(List<Integer> nums){
     }
     //n.sort();
     for(Integer i=0;i<n.size()-1;i++){
-        for(Integer j=i+1;i<n.size()-1;j++){
+        for(Integer j=i+1;i<n.size();j++){
             if(n[i]<n[j]) continue;
             else{
                 Integer temp=n[i];
