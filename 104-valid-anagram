@@ -8,7 +8,6 @@ public boolean isAnagram(String s1, String s2) {
     }
     map<String,Integer> map1 = new map<String,Integer>();
     for(Integer i=0;i<s1.length();i++){
-        system.debug(s1.charAt(i));
         if(map1.containskey(s1.substring(i,i+1))){
             Integer val = map1.get(s1.substring(i,i+1));
             map1.put(s1.substring(i,i+1),val+1);
