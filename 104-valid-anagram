@@ -5,7 +5,8 @@ public boolean isAnagram(String s1, String s2) {
     }
     map<String,Integer> map1 = new map<String,Integer>();
     for(Integer i=0;i<s1.length();i++){
-        if(map1.containskey(s1.charAt(i))){
+        string a = s1.charAt(i);
+        if(map1.containskey(a)){
             map1.get(s1.charAt(i))+=1;
         }
         else{
