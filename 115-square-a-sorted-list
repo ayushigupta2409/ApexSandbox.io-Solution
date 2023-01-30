@@ -5,7 +5,7 @@ public static List<Integer> squareList(List<Integer> nums){
         n.add(nums[i]*nums[i]);
     }
     //n.sort();
-    for(Integer i=0;i<n.size()-2;i++){
+    for(Integer i=0;i<n.size()-1;i++){
         for(Integer j=i+1;i<n.size()-1;j++){
             if(n[i]<n[j]) continue;
             else{
