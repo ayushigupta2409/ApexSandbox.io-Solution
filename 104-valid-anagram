@@ -20,7 +20,7 @@ public boolean isAnagram(String s1, String s2) {
             map1.put(s2.substring(i,i+1),val-1);
         }
         else{
-            map1.put(s1.substring(i,i+1),-1);
+            map1.put(s2.substring(i,i+1),-1);
         }
     }
     for(Integer i:map1.values()){
