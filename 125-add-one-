@@ -6,6 +6,7 @@ public void plusOne(List<Integer> numbers) {
 
 public void calculate(Integer index,List<Integer> numbers){
     if(numbers.size()-1==index) {
+        numbers.pop();
         numbers.add(0,1);
         numbers.add(1,0);
     }
