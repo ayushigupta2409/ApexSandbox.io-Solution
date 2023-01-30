@@ -1,0 +1,25 @@
+public boolean isAnagram(String s1, String s2) {
+    //Code here
+    if(s1.length() != s2.length()){
+        return false;
+    }
+    map<String,Integer> map1 = new map<String,Integer>();
+    for(Integer i=0;i<s1.length();i++){
+        if(map1.containskey(s1.charAt(i))){
+            map1.get(s1.charAt(i))+=1;
+        }
+        else{
+            map1.put(s1.charAt(i),1);
+        }
+        if(map1.containskey(s2.charAt(i))){
+            map1.get(s2.charAt(i))-=1;
+        }
+        else{
+            map1.put(s1.charAt(i),-1);
+        }
+    }
+    for(Integer i:map1.values()){
+        if(i != 0) return false;
+    }
+    return true;
+}
