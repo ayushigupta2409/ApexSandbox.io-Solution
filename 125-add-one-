@@ -7,7 +7,7 @@ public void plusOne(List<Integer> numbers) {
         numbers.addAll
     } 
     */
-    String s = join(numbers,',');
+    String s = String.join(numbers,'');
     Integer val = Integer(s);
     val+=1;
     s=String(val);
