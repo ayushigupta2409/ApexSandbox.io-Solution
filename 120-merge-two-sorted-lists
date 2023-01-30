@@ -1,0 +1,7 @@
+public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2){
+    // solution 
+    set<Integer> s = new set<Integer>(list1);
+    s.addall(list2);
+    list<Integer> l = new List<Integer>(s);
+    return l;
+}
