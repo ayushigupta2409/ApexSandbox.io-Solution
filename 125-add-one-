@@ -8,9 +8,9 @@ public void plusOne(List<Integer> numbers) {
     } 
     */
     String s = String.join(numbers,'');
-    Integer val = Integer(s);
+    Integer val = Integer.valueof(s);
     val+=1;
-    s=String(val);
+    s=String.valueof(val);
     List<Integer> l1 = new List<Integer>();
     l1 = s.split(',');
     return l1;
