@@ -1,0 +1,17 @@
+public void plusOne(List<Integer> numbers) {
+    // code here
+    /*
+    if(numbers[numbers.size()-1]<9) numbers[numbers.size()-1]+=1;
+    else{
+        numbers.pop();
+        numbers.addAll
+    } 
+    */
+    String s = join(numbers,',');
+    Integer val = Integer(s);
+    val+=1;
+    s=String(val);
+    List<Integer> l1 = new List<Integer>();
+    l1 = s.split(',');
+    return l1;
+}
