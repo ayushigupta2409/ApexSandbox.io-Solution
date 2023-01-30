@@ -12,9 +12,17 @@ public void calculate(Integer index,List<Integer> numbers){
     }
     else{
         numbers[numbers.size()-1-index]=0;
-        if(numbers[numbers.size()-2-index]<9) numbers[numbers.size()-1]+=1;
-        else {
-            calculate(index-1,numbers);
+        if(numbers.size()-2-index>0){
+            if(numbers[numbers.size()-2-index]<9) numbers[numbers.size()-1]+=1;
+            else {
+                calculate(index-1,numbers);
+            }
         }
+        else{
+            numbers.add(0,1);
+            numbers.add(1,0);
+            numbers.remove(numbers.size()-1);
+        }
+        
     }
 }
