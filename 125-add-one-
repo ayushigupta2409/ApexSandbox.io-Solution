@@ -13,5 +13,6 @@ public void plusOne(List<Integer> numbers) {
     s=String.valueof(val);
     List<Integer> l1 = new List<Integer>();
     l1 = s.split(',');
+    for(String i:l1) i=Integer.valueof(i);
     return l1;
 }
