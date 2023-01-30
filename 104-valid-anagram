@@ -12,9 +12,8 @@ public boolean isAnagram(String s1, String s2) {
             Integer val = map1.get(s1.substring(i,i+1));
             map1.put(s1.substring(i,i+1),val+1);
         }
-        else{
+        else
             map1.put(s1.substring(i,i+1),1);
-        }
         if(map1.containskey(s2.substring(i,i+1))){
             Integer val = map1.get(s2.substring(i,i+1));
             map1.put(s2.substring(i,i+1),val-1);
