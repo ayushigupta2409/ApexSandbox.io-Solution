@@ -18,5 +18,5 @@ public void plusOne(List<Integer> numbers) {
         l1.add(Integer.valueof(i));
     }
     numbers.clear();
-    numbers=l1;
+    numbers.addAll(l1);
 }
