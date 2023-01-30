@@ -1,22 +1,19 @@
 public void plusOne(List<Integer> numbers) {
     // code here
-    /*
     if(numbers[numbers.size()-1]<9) numbers[numbers.size()-1]+=1;
-    else{
-        numbers.pop();
-        numbers.addAll
-    } 
-    */
-    String s = String.join(numbers,'');
-    Integer val = Integer.valueof(s);
-    val+=1;
-    s=String.valueof(val);
-    List<String> l2 = new List<String>();
-    List<Integer> l1 = new List<Integer>();
-    l2 = s.split(',');
-    for(String i:l2){
-        l1.add(Integer.valueof(i));
+    else calculate(0,numbers); 
+}
+
+public void calculate(Integer index,List<Integer> numbers){
+    if(numbers.size()-1==index) {
+        numbers.add(0,1);
+        numbers.add(1,0);
     }
-    numbers.clear();
-    numbers.addAll(l1);
+    else{
+        numbers[numbers.size()-1-index]=0;
+        if(numbers[numbers.size()-1-index]<9) numbers[numbers.size()-1]+=1;
+        else {
+            calculate(index-1,numbers);
+        }
+    }
 }
