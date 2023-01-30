@@ -11,8 +11,9 @@ public void plusOne(List<Integer> numbers) {
     Integer val = Integer.valueof(s);
     val+=1;
     s=String.valueof(val);
+    List<String> l2 = new List<String>();
     List<Integer> l1 = new List<Integer>();
-    l1 = s.split(',');
-    for(String i:l1) i=Integer.valueof(i);
-    return l1;
+    l2 = s.split(',');
+    for(String i:l2) l1.append(Integer.valueof(i));
+    return l2;
 }
