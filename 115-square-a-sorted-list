@@ -3,5 +3,5 @@ public static List<Integer> squareList(List<Integer> nums){
     for(Integer i=0;i<nums.size();i++){
         nums[i]=nums[i]*nums[i];
     }
-    return nums;
+    return nums.sort();
 }
