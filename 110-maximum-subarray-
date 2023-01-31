@@ -21,5 +21,5 @@ public static Integer maxSubArraySum(List<Integer> nums, Integer target){
     Integer maxval=0;
     for(Integer i=nums.size()-target-1;i<nums.size();i++)
         maxval+=nums[i];
-    return nums;
+    return maxval;
 }
