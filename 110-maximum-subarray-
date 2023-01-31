@@ -1,5 +1,6 @@
 public static Integer maxSubArraySum(List<Integer> nums, Integer target){
 //code here
+/*
     Integer maxval= 0;
     for(Integer i=0;i<target;i++)
         maxval+=nums[i];
@@ -15,4 +16,10 @@ public static Integer maxSubArraySum(List<Integer> nums, Integer target){
     }
     if(target==1 && nums[nums.size()-1]>maxval) return nums[nums.size()-1];
     return maxval;
+*/
+    nums.sort();
+    Integer maxval=0;
+    for(Integer i=nums.size()-target-1;i<nums.size();i++)
+        maxval+=nums[i];
+    return nums;
 }
