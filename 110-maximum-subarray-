@@ -3,7 +3,7 @@ public static Integer maxSubArraySum(List<Integer> nums, Integer target){
     Integer maxval= 0;
     for(Integer i=0;i<target;i++)
         maxval+=nums[i];
-    Integer currval=new Integer();
+    Integer currval;
     Integer i=0;
     while(i<nums.size()-target){
         currval = nums[i];
