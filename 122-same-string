@@ -1,14 +1,14 @@
 public static Boolean sameString(String str1, String str2){
     // solution
     for(Integer i=1;i<str1.length();i++){
-        if(str1.charAt(i)=='#'){
+        if(str1.substring(i,i+1)=='#'){
             if(i+1<str1.length())
                 str1=str1.substring(0,i-1)+str1.substring(i+1,str1.length());
             else str1=str1.substring(0,i-1);
         }
     }
     for(Integer i=1;i<str2.length();i++){
-        if(str2.charAt(i)=='#'){
+        if(str2.substring(i,i+1)=='#'){
             if(i+1<str2.length())
                 str2=str2.substring(0,i-1)+str2.substring(i+1,str2.length());
             else str2=str2.substring(0,i-1);
