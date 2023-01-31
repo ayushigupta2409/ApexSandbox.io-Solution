@@ -1,6 +1,8 @@
 public static Integer maxSubArraySum(List<Integer> nums, Integer target){
 //code here 
-    Integer maxval=Integer.valueOf('-2147483648');
+    Integer maxval= 0;
+    for(Integer i=0;i<target;i++)
+        maxval+=nums[i];
     Integer currval=new Integer();
     Integer i=0;
     while(i<nums.size()-target){
